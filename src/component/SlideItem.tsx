@@ -4,7 +4,7 @@ import Slides from '../data/data';
 
 const { width, height } = Dimensions.get("screen");
 
-const SlideItem = ({ item: { item } }: { item : ListRenderItemInfo<typeof Slides[0]> }) => {
+const SlideItem = ({ item: { item } } : { item : ListRenderItemInfo<typeof Slides[0]> }) => {
 
     const translateYImage = new Animated.Value(40);
     Animated.timing(translateYImage, {
@@ -41,7 +41,7 @@ const SlideItem = ({ item: { item } }: { item : ListRenderItemInfo<typeof Slides
 }
 
 const styles = StyleSheet.create({
-    
+
     container: {
         width,
         height,
